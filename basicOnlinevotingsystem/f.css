@@ -1,0 +1,12 @@
+body{
+    background-image:url('error1.webp'); 
+    background-size:cover; 
+    background-position:var() ; 
+    background-repeat: no-repeat; 
+    height:100vh;
+    margin:0;
+    overflow:hidden;
+}
+h1{
+    color:white;
+}

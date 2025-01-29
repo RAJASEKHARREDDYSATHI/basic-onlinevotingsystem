@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="o.css">
+    
+     
+</head>
+<body>
+    <img style="margin-top:0px;margin-right:0px" src="kl.jpg" alt="KL University" height="90px" width="230px">
+    
+    <h1><marquee>**Welcome to the KL University Union Leader Online Voting System 2025**</marquee></h1>
+    
+    <form align="center"  onsubmit="checkage(event)">
+        <input style="width:210px; height:25px;margin-top:100px;" type="text" id="name" placeholder="Enter your Name"><br><br>
+        <input style="width:210px; height:25px;" type="number" id="age" placeholder="Enter your Age"><br><br>
+        <input style="width:210px; height:25px;" type="text" id="department" placeholder="Enter your Department"><br><br>
+        <input style="width:210px; height:25px;" type="number" id="year" placeholder="Enter your Year"><br><br>
+        
+        <button>Submit</button>
+    </form>
+
+    <script>
+        function checkage(event) {
+            event.preventDefault();
+            const age = document.getElementById("age").value;
+            if (age >= 18) {
+                location.href = "1.html";
+            } else {
+                location.href = "2.html";
+            }
+        }
+    </script>
+</body>
+</html>

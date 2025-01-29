@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons with Images</title>
+    <style>
+        
+        .form-container {
+            display: flex;
+            gap:200px;
+            padding: 10px;
+            align-items: center;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+        input[type="radio"]
+        {
+            transform: scale(1.5);
+        }
+        input[type="submit"]
+        {
+            transform: scale(1.5);
+            color: white;
+            background-color: green;
+            
+        }
+        
+    </style>
+    
+    
+</head>
+<body style="background-color: aqua;background-image: url('bg.jpeg');">
+<h1 style="color: white;"><marquee>PLEASE VOTE FOR A SYMBOL OF YOUR WISH</marquee></h1>
+<h2 align="center" style="color:white;font: size 30px;">List of Participant Symbols</h2>
+<form class="form-container" onsubmit="hello(event)">
+    
+    <div class="column">
+        
+        <label ><img src="bat.jpeg" width="150" height="170" alt="Bat"></label>
+        
+        <input type="radio" id="bat" name="party" >
+
+        
+        <label ><img src="cheetah.jpeg" width="150" height="170"alt="Cheetah"></label>
+
+        <input type="radio" id="cheetah" name="party" >
+    </div>
+
+    
+    <div class="column">
+        
+        <label ><img src="car.jpg" width="150" height="170"alt="Car"></label>
+        <input type="radio" id="car" name="party" >
+
+       
+        <label ><img src="laptop.jpeg" width="150"height="170" alt="Laptop"></label>
+        <input type="radio" id="laptop" name="party" >
+    </div>
+
+    
+    <div class="column">
+       
+        <label ><img src="lion.jpeg" width="150" height="170" alt="Lion"></label>
+        <input type="radio" id="lion" name="party" >
+
+        
+        <label ><img src="parrot.jpeg" width="150" height="170" alt="Parrot"></label>
+        <input type="radio" id="parrot" name="party" >
+    </div>
+    <input type="submit" value="SUBMIT">
+</form>
+ <script>
+function hello(event)
+{
+    event.preventDefault();
+var d=document.querySelector('input[name="party"]:checked');
+if(d)
+{
+location.href="3.html";
+}
+else
+{
+    alert("Select an option");
+}
+}
+</script>
+</body>
+</html>

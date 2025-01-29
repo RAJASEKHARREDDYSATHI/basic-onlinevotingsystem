@@ -1,0 +1,20 @@
+h1{
+    
+    color:white;
+    margin-top:185px;
+}
+p{
+    color:white;
+    margin-top:110px;
+    font-size:37px;
+    font-style: italic;
+}
+body{
+    background-image: url('thank.jpeg');
+    background-size:cover; 
+    background-position:var() ; 
+    background-repeat: no-repeat; 
+    height:100vh;
+    margin:0;
+    overflow:hidden;
+}
